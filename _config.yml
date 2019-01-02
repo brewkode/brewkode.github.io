@@ -14,7 +14,6 @@ url	      : "http://brewkode.com"
 permalink     : /blog/:year/:month/:day/:title/
 
 twitter_username  : brewkode
-github_username   : brewkode
 comments_enabled  : false # if enabled (set to true), please provide your disqus_username
 postshare_enabled : false
 
