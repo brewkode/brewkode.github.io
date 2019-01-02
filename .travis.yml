@@ -4,3 +4,14 @@ rvm:
 script: "bundle exec jekyll build"
 # debug logs to understand if the site structure and contents are as expected
 after_script: "ls -R _site/* && cat _site/index.html"
+
+deploy:
+  provider: pages
+  local-dir: _site
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
+  target-branch: master
+  verbose: true
+  on:
+    branch: source
