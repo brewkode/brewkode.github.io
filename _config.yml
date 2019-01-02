@@ -4,7 +4,7 @@ title_right   : "kode" # default: ""
 cover         : "" # image uri like logo/cover image for site seo
 baseurl	      : ""
 url	      : "www.brewko.de"
-
+repository    : "brewkode/brewkode.github.io"
 
 twitter_username  : "brewkode"
 comments_enabled  : false # if enabled (set to true), please provide your disqus_username
