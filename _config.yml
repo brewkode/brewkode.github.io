@@ -8,7 +8,7 @@ twitter_username  : "brewkode"
 comments_enabled  : false # if enabled (set to true), please provide your disqus_username
 postshare_enabled : false
 
-remote_theme: heiswayi/thinkspace
+#remote_theme: heiswayi/thinkspace
 
 author:
   name     : "Sriram Ramachandrasekaran"
