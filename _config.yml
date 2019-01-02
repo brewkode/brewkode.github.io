@@ -17,7 +17,6 @@ sass:
   style     : compressed # expanded
 
 plugins:
-  - jekyll-sitemap
   - bourbon
   - jekyll-paginate
 
