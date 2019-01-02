@@ -2,3 +2,5 @@ language: ruby
 rvm:
 - 2.6.0
 script: "bundle exec jekyll build"
+# debug logs to understand if the site structure and contents are as expected
+after_script: "ls -R _site/* && cat _site/index.html"
