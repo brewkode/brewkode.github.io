@@ -10,7 +10,7 @@ title_left    : "brew"
 title_right   : "kode" # default: ""
 cover         : "" # image uri like logo/cover image for site seo
 baseurl	      : ""
-url	      : "http://brewko.de"
+url	      : "http://brewkode.com"
 permalink     : /blog/:year/:month/:day/:title/
 
 twitter_username  : brewkode
