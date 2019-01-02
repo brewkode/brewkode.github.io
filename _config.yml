@@ -2,6 +2,9 @@
 title_left    : "brew"
 title_right   : "kode" # default: ""
 cover         : "" # image uri like logo/cover image for site seo
+baseurl	      : ""
+url	      : "www.brewko.de"
+
 
 twitter_username  : "brewkode"
 comments_enabled  : false # if enabled (set to true), please provide your disqus_username
