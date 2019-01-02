@@ -8,6 +8,8 @@ twitter_username  : "brewkode"
 comments_enabled  : false # if enabled (set to true), please provide your disqus_username
 postshare_enabled : false
 
+github: [metadata]
+
 author:
   name     : "Sriram Ramachandrasekaran"
 
