@@ -8,6 +8,7 @@
 # Site settings
 title_left    : "brew"
 title_right   : "kode" # default: ""
+description   : "checkout whats brewing"
 cover         : "" # image uri like logo/cover image for site seo
 baseurl	      : ""
 url	      : "https://brewkode.com"
@@ -26,7 +27,7 @@ author:
 
 # Sass configuration
 sass:
-  sass_dir  : assets/scss
+  sass_dir  : scss
   style     : compressed # expanded
 
 plugins:
