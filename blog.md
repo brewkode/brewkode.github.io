@@ -4,4 +4,4 @@ title: Blog
 permalink: /blog/
 ---
 
-Under construction
+Come back after sometime, something is brewing up!
