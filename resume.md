@@ -4,4 +4,4 @@ title: Resume
 permalink: /resume/
 ---
 
-![resume](../assets/images/sriram_resume_2018.png)
+![resume](/images/sriram_resume_2018.png)
