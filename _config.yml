@@ -17,6 +17,7 @@ permalink     : /blog/:year/:month/:day/:title/
 twitter_username  : brewkode
 comments_enabled  : false # if enabled (set to true), please provide your disqus_username
 postshare_enabled : false
+ga_tracker_id     : "UA-132274145-1"
 
 github: [metadata]
 

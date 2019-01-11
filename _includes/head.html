@@ -95,5 +95,16 @@
     <link rel="next" href="{{ paginator.next_page_path | prepend: site.baseurl | prepend: site.url }}">
   {% endif %}
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_tracker_id }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-132274145-1');
+  </script>
+
+
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | prepend: site.url }}">
 </head>
