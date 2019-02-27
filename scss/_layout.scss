@@ -17,7 +17,7 @@ body {
  &:hover,
  &:focus,
  &:active {
-   border-bottom: 2px solid $indix-link-color;
+   border-bottom: 2px solid $indix-link-color !important;
  }
 }
 
