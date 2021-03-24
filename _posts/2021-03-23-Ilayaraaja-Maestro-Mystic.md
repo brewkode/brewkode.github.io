@@ -1,4 +1,9 @@
-# Raaja -- Maestro or Mystic ?
+---
+layout: post
+title: "Ilayaraaja - Maestro or Mystic ?"
+comments: false
+---
+
 
 The other day on CH, I was listening in on a room. It was a technical analysis of one of [Ilayaraaja's](https://en.wikipedia.org/wiki/Ilaiyaraaja) composition by [Satish Raghunathan](https://twitter.com/satish_composer), who happens to be a good friend of [Swathi](https://twitter.com/swathrav) and me. This is not my first time hearing Satish go bonkers over this man's music, but, it's a joy to hear it everytime. The next day, it spawned a discussion with Swathi & me on one aspect of the discussion which I felt was universally applicable. Before we move to it, for the readers -- I'm a _Gnanasoonyam_ when it comes to music. All the musical nuances of that CH discussion went way above my head, and, I could (only) connect with that discussion on a meta aspect.
 
