@@ -189,7 +189,7 @@ I tried taking notes this time around and you can find them below:
     - Tools
         - Let teams choose their tools
         - Monitoring top priority
-## Research Methodology
+
 ## Transformation
 ING Netherlands, 34.4M customers, 52K employees, 9k Engineers
 - Tribe
