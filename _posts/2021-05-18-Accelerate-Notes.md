@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Notes from Accelerate by Nicole Forsgren, Jez Humble and Gene Kim"
+title: "Notes from \"Accelerate\", by Nicole Forsgren, Jez Humble and Gene Kim"
 comments: false
 ---
 
