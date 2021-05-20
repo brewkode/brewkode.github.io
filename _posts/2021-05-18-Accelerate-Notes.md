@@ -1,0 +1,247 @@
+---
+layout: post
+title: "Notes from Accelerate by Nicole Forsgren, Jez Humble and Gene Kim"
+comments: false
+---
+
+Accelerate by [Dr. Nicole Forgsren](https://twitter.com/nicolefv), [Jez Humble](https://twitter.com/jezhumble), [Gene Kim](https://twitter.com/realgenekim) is a book that has research backed findings on Building and Scaling high performance organizations. The book is split into 3 parts - findings, the underlying research process and the transformation guide ending with notes from ING, Netherlands.
+
+While I've been working in groups where I've practiced the principles/techniques outlined in the book, I always wanted a reference book that I could use to point for folks who wanted to feel confident that the methods / suggestions are a paved path - reasonably well understood and backed by data. And, thus, I landed on Accelerate. 
+
+I tried taking notes this time around and you can find them below:
+
+## Findings
+- Focus on capabilities, not on maturity.
+    - Maturity lands you at a place and once reached, calls it done. Maturity definitions remain very static.
+    - Capabilities constantly push you to move forward or improve. Capabilities are feedback based and contextual.
+- Evidence based transformations. Following did not inform anything about performance
+    - technology choice - mainframe vs greenfield
+    - who does deploys - dev or operations
+    - if a change is approved through a CAB or not
+- Measurement of software delivery performance - comparison b/w high performance teams vs others
+    - Frequency of deployments - 46 times more frequent code deploys
+    - Lead time from commit to deploy - 440 times faster lead time from commit to deploy
+    - MTTR from a downtime - 170 times faster recovery time
+    - Change failure rate - 5 times lower change failure rate
+- Culture - it is behaviour exhibited day to day
+- Measurements
+    - Existing ones - output vs outcome
+    - local measures vs global ones - lines of code, velocity and utilization
+    - lines of code - high or low does not mean anything
+    - velocity - velocity at an org is not comparable. Also, once that becomes the value you're measuring, it's easy to game it
+    - utilization - queueing theory tells us - 100% utilization means infinite lead time. i.e., nothing in WIP gets done
+- Measurements of Software delivery performance
+    - Tempo: Lead time - From the time a customer raises a request to the time they are serviced with that capability. In a product development world, this has 2 parts - time to design and validate a product & time it takes to deliver. The first part is fuzzy (fuzzy-front-end), while the second part has well-defined boundaries.
+        - Faster feedback, helps course corrections
+        - rolling out hot fixes becomes easy
+        - delivery lead time - code commit to hitting production (after running all tests)
+    - Tempo: Frequency of deployments
+        - Reducing batch size - key method by which TPS achieved their clamored success
+            - Reduces cycle time, variability, risk/overhead, costs
+            - Improves motivation, urge to succeed
+        - No clear equivalent of batch size in s/w
+        - Deployment frequency is a good proxy. More frequent deploys = less changes per deploy. Nirvana: every commit is deployed
+        - 
+    - Stability: MTTR
+        - Previously, we were measuring MTBF - this means, what is the mean-time between failures in production. With nature of s/w, failure is a given. What we instead should seek to measure is how fast can we "react" when there's an outage or bug or customer anamoly. This is captured via MTTR - mean time to recovery.
+    - Stability: Change failure rate
+        - The final one is how much of our deployed change in production degrades our existing quality/performance - which warrants to a hotfix or rollback or rollforward
+        - This gives us a sense of quality of our entire pipeline
+- Software Delivery Performance -> Organizational Performance 
+- Software Delivery Performance -> Non-Commercial performance
+- Driving change
+    - Having a well defined "Software Delivery Performance" means, we can use that drive improve performance of teams.
+    - We can also test hypotheses of practices - how does test automation impact Software Delivery performance, etc.
+    - It is important though to understand the context of the organization - an org., which has a learning culture will benefit majorly from using these metrics and improving them. In an org., which is pathological or bureaucratic, this will only result in number gaming.
+    - So, it becomes imperative to focus on Culture.
+- Measuring and Changing Culture
+    - Org culture can exist at 3 basic levels - assumptions / values and artifacts
+    - Assumptions are formed over time as members of the group/org make sense of relationships, events & activities. These interpretations are the least "visible"; we just "know" and hard to "articulate"
+    - "Values" are more visible - can be discussed & debated about in public. "values" provide a lens through which we view & interpret the relationships/events/activities. They influence group interactions and provide contextual rules that drive action. This is what we generally call as "culture"
+    - "Artifacts are the most visible - written mission/vision statements, technology, formal statements, heroes and rituals
+    - Sociologist Ron Westrum has the following typology for org cultures
+        - Pathological (power-oriented) - characterized by fear/threat. Lot of Information hoarding or distortion for political or selfish reasons
+        - Bureaucratic (rule-oriented) - orgs protect departments. departments would like to maintain their "turfs" and insist on their rules and do things by "their" book
+        - Generative (performance-oriented) - orgs focus on mission. How to accomplish our goal ? Everything is subordinated to good performance.
+        - Westrum also notes that the culture determines/predicts information flow in an org.
+        - According to him good info has 3 characteristics
+            - provides answers to the question the receiver needs answered
+            - it is timely
+            - it is presented in such a way that it can be effectively used by the receiver
+        - Westrum's additional insight was that the culture determines/predicts performance outcomes.
+    - Measuring culture
+        - Can be measured using "Likert" type questions - where we measure peeople's perception by asking them how "strongly they agree or disagree to a statement". 
+        - the statements must be worded strongly so that, we get back strong agree/disagree instead of feeling neutral. Sample series of questions
+            - "Information is actively sought"
+            - Messengers are not punished when they deliver news of failures or other bad news
+            - Responsibilities are shared
+            - Cross-functional collab is encouraged and rewarded
+            - Failure causes inquiry (scapegoating, justice, inquiry)
+            - New ideas are welcomed
+            - Failures are treated as critical to identify & improve the system
+        - to measure your culture effectively, we also need to understand if the people who answer the survey understand the questions in the same way as they were intended to be.
+        - being bureaucratic (rule-oriented) are not necessarily bad and there are administrative / other reasons for the same. It helps provide a level playing field and the book acknowledges that.
+        - Something to note, there are startup which are pathological and orgs in US Govt which are generative. So, size of the org does not make your culture one vs other.
+    - What does good culture predict
+        - good culture requires trust & cooperation; so it reflects collaboration & trust inside the org
+        - better culture also represents better decision making. because of shared information and the fact that wrong decisions can be easily reversed due to trust/collaboration
+        - finally, teams with this culture improve faster - due to trust / transparency, mistakes get highlighted without fear and can be addressed quickly and thus increase job satisfaction.
+        - Westrum Org Culture -> SDP
+        - Westrum Org Culture -> Org Performance
+        - Using this Google did a 2 year research to understand the commonalities b/w their best-performing teams. After 200+ interviews across 180 teams spanning 250+ attributes, they realized that "who on the team matters less than how the team members interact, structure their work and view their contributions". In essence, team dynamics.
+        - How organizations treat failures is very instructive of what culture there is. Often a failure is a complex interplay of contributing factors. So, trying to identify the human error is the most dangerous. Orgs with generative culture start with human error and work further down to understand how to improve information flow, provide better tools, or what around them should be fixed. Nurture the environment - the person grows.
+- Technical Practices - Continuous Delivery (CD)
+	- Build quality in - cease dependence on inspection to achieve quality
+	- work in small batches - big chunks, longer lead time, higher failure rate
+	- computers do repetitive stuff and people solve problems
+	- pursue continuous improvement
+	- shared responsibility
+	- To enable CD we need
+		- Version Control
+		- Configuration management (IaC, etc)
+		- Continuous Integration - short lived branches, encourage trunk based dev
+		- Continuous testing - tests are always run for every commit
+		- Shift left on Security
+		- Loosely coupled architecture
+		- Empowered teams
+		- Monitoring & proactive notifications
+	- outcomes of practicing CD
+		- Better identification with the org - since, making progress can be "felt" and "feedback/impact" is visible
+		- higher software delivery performance (see above)
+		- generative, performance oriented culture
+	- teams also noticed the time they spend on "new features" increased as they practiced and refined their CD processes
+- Architecture
+	- Legacy technologies or modern technologies did not determine the software delivery performance.
+	- architecture of the systems determined the performance. teams which were able to say YES to below 2 questions had high performance
+		- We can do most of our testing without an integrated environment - testability
+		- We can and deploy our applications independent of other applications/services it depends on - deployability
+	- the above two can be achieved through what are called - "loosely coupled systems"
+	- 2017 survey to gather these performance data showed that following were biggest contributors to CD
+		- make large scale design changes without permission of somebody outside the team
+		- make large scale design changes without depending on members outside the team
+		- complete work without coordination / communication with other teams
+		- deploy & release on demand
+		- do most of their testing on demand w/o integrated test env
+		- deploy during normal business hours w/ negligible/no downtime
+	- communication b/w and architecture - identified & stated by Melvin Conway - called, Conway's Law
+	- inverse conway Maneuver - evolve your team/org structure to promote desired architecture
+	- the goal for your architecture should be enable teams to get stuff done from design > deploy without needing high bandwidth communication b/w teams - achieved through bounded contexts, APIs and more
+	- also, loosely coupled architecture "enables" scaling - i.e., you can have more people do more things in parallel if your architecture is loosely coupled. conversely, if you architecture has "high coupling" - adding more people will _slow_ you down drastically.
+	- allow teams to choose their tools
+	- architects should focus more on engineers and outcomes more than tools.
+- Shift Left on Security
+	- cloud.gov is a classic case of shift left on security where CD had automated 269 of 325 controls
+	- security as code
+	- policy as code
+	- security is everyone's responsibility - [rugged movement](https://ruggedsoftware.org/)
+- Mgmt Practices for Software
+	- Limit Work in progress - WIP - increase flow
+	- Visual Management
+	- Feedback from Production
+	- Lightweight Change approvals
+		- production changes approved by external CAB
+		- high-risk changes needs approval
+		- peer reivew to manage changes
+		- no change approval process
+		- Result: Interesting teams that followed no approval or peer review approval had higher performance than others.
+	- what about Seggregation of Duties (SoD)
+		- achieved through a peer reivew + automated process
+- Product Development
+	- Work in Small batches
+	- Flow of work visible - is there visibility from business all the way to customers
+	- Gather / Implement customer feedback - periodically seek customer feedback to learn and improve
+	- Team experimentation - are the teams empowered to course correct midway without consulting with higher-ups
+- Sustainability / Satisfaction / Identity and Engagement
+	- Reduce deployment pain
+	- Reduce burnout
+		- caused due to lack of alignment or friction
+		- employees individual values in conflict with org values
+		- deployment nightmares
+	- NPS - High performance is a good indicator for High Satisfaction
+	- Higher Satisfaction also increases Identity and Engagement within the org
+	- Diversity increases performance
+- Leadership & Managers
+    - Servant vs Transformational Leadership
+        - Transformational leadership - focuses to motivate followers identify with the mission/vision of company
+        - Servant leadership - focuses to grow and enable followers to grow beyond
+    - Transformation leadership at the top - to set mission / align and get people motivated to the companies goals
+        - Vision / Inspiration comms / Intellectual stimulation / Supportive / Personal Recognition these translate to
+            - cicd - test & deploy auto / shift-left security / empowered teams / loosely coupled architectures
+            - team experimentation / small batches / gather & implement customer feedback
+    - Managers
+        - conduit - connect strategy & execution with their team
+        - creating safe spaces, people development, removing obstacles
+        - investment in devops
+        - make metrics/goals visible, share knowledge and work on keeping things aligned, provide more latitude to team members
+        - provide dedicated days/time to clean up, experiment and learn
+- Improving culture - Tips
+    - Collaboration
+        - Build trust with your peers in other teams
+        - Encouraging practitioners to move b/w departments
+        - Actively seek, encourage and reward "collaborative" work
+        - Ex: Use Game days (planned outages or planned experimentation) / DR testing / Chaos testing exerciss to build relationships
+    - Learning
+        - Training budgets and encouraging the same
+        - ensuring there's time for informal learning
+        - Normalize failures and ensure safety
+        - Creating opportunities and spaces to share information
+        - Sharing via Demo days
+    - Tools
+        - Let teams choose their tools
+        - Monitoring top priority
+## Research Methodology
+## Transformation
+ING Netherlands, 34.4M customers, 52K employees, 9k Engineers
+- Tribe
+    - Collection of squads with interconnected missions
+    - includes on avg 150 people
+    - empowers "Tribe Lead" to establish priorities, allocate budgets and form interface with other tribes to ensure sharing
+- Squad
+    - includes no more than 9 people; self-steering, autonomous
+    - comprises representatives from different functions working in single location
+    - has e2e responsibilities for achieving customer-related objective
+    - can change functional composition as mission evolves
+    - is dismantled as soon as missing is executed
+- Agile Coach
+    - Coaches individuals and squads to create high-performing teams
+- Product Owner (squad member, not the leader)
+    - is responsible for coordinating squad activities
+    - manages backlog, priorities and todo lists
+- Chapter (developes expertise & knowledge across squads - horizontal)
+    - is responsible for one chapter
+    - represents hierarchy for squad members
+- Catchball rhythm - to facilitate horizontal / vertical communication - learning and dependency comms - daily
+    - Squad stand-ups (before 11am)
+    - Tribe stand-ups (before 1pm)
+    - Senior Leadership stand-ups (at 1pm)
+    - Tribe lead learns from chapter & squad members - including customer learnings too - these learnings are then shared with Tribe lead peers.
+    - this catchball rhythm sets up learning cycles from customers all the way back to leadership (called Hashin Kanra in the Lean Management)
+    - causes continuous, rapid feedback cycle of learning, testing, validating and adjusting  - known as Plan-Do-Check-Act cycle
+- Tribe leads also go to the squads and ask questions in an attempt to learn. things like
+    - what were some new learnings that we made
+    - what are places where there are issues/bottlenecks
+    - what do you need from me to support you...
+- this also means shifting from command-n-control leaders to leaders-as-coaches; where a leader's job is
+    - do work
+    - seek feedback and improve
+    - enable & support growth
+- Learnings during the transformation (by a tribe lead)
+    - General
+        - at the beginning, our teams were not learning/improving
+        - we could not get them to a place of continuous learning
+        - we saw that, we were wrestling with some problems and other teams had solutions but we couldn't get together and solve it
+        - when we were not able to learn as management, we were not able to help our teams learn
+        - we had to learn ourselves to be a learning team.
+        - once this happened, we were able to help our teams to become a learning team
+    - On culture
+        - we would not even talk about culture
+        - was very hard to discuss and did not know how to change
+        - but once we changed the way we work, change the routines, automatically culture changes
+    - On result
+        - senior mgmt is quite happy with the speed + quality combination
+        - when we go green on a project/feature, we stay green longer where as other teams go b/w green and red often
+- Transforming leadership / mgmt and team practices
+    - Often the answer to question - "how to change culture"
+        - how do we(leadership) learn "how to learn" How can "I" learn ? How can I make it safe for others to learn ? How can I learn from others and with them ?
+        - at ING Netherlands, all this started with a leader who asked this question, brought in coaches and tasked his team with the challenge of learning including themselves. 
+	- [Practices for your reference](https://files.ontraport.com/media/phpleXP7K?Expires=1730762516&Signature=P~VbcKyK7C3dsOosbxDMTx10LxI9Z7qPOCf71ywoa~YvAfQtB7lFZnLarBbfiGTeP53PqN5FervF4hycT5WyzCmcgDwzT~ZUIz81pXZjIeFlgtkdMpljnTrSmlXs0bi5fpWBZF~JTTHLgd-iOo6QoSukjk7Hqtd2s1Q73zBjtc6uqlJNoydoRd7hUO4RS5YAJ8knqiLvI2AkQL3E2V3Bz4guvz7~goKj1lee0ryQT2sz~38Qu~VoROPQ7zge2KUvIbp6CDGadGb0cAI7DkNn8hmoZRrKj7VXdfATGZD0958YXijHq0t9U9QxDBqsHFt~U-JabEHdXslTSA6a~0oFtQ__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA)
